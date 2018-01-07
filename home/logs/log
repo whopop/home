@@ -1,2 +1,1633 @@
-
-
+[I 171228 02:25:14 web:1971] 304 GET /profile.html (127.0.0.1) 3.52ms
+[I 171228 02:25:14 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.29ms
+[I 171228 02:25:14 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.87ms
+[I 171228 02:25:14 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.88ms
+[I 171228 02:25:14 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.70ms
+[I 171228 02:25:14 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.66ms
+[I 171228 02:25:14 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 6.76ms
+[I 171228 02:25:14 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.91ms
+[I 171228 02:25:14 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.72ms
+[I 171228 02:25:14 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.17ms
+[I 171228 02:25:14 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.17ms
+[I 171228 02:25:14 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.03ms
+[I 171228 02:25:14 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.79ms
+[I 171228 02:25:14 web:1971] 304 GET /static/media/22.jpg (127.0.0.1) 0.73ms
+[I 171228 02:25:14 web:1971] 304 GET /api/profile (127.0.0.1) 1.77ms
+[E 171228 02:25:24 Profile:40] [Errno 2] No such file or directory: '../static/media/56d1b08887c9401a8ed37a23ccd4d84a.jpg'
+[I 171228 02:25:24 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 1.29ms
+[I 171228 02:28:25 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 02:28:35 web:1971] 304 GET /profile.html (127.0.0.1) 32.87ms
+[I 171228 02:28:35 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 7.73ms
+[I 171228 02:28:36 web:1971] 304 GET /api/profile (127.0.0.1) 191.52ms
+[E 171228 02:28:42 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129443', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------161419652312347533861110337033'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:42 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 108.97ms
+[E 171228 02:28:49 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129441', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------69357192018133379051129529895'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:49 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.69ms
+[E 171228 02:28:49 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129439', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------1480638751313336312049214035'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:49 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.05ms
+[E 171228 02:28:49 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129439', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------7374559651882373458221453325'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:49 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.56ms
+[E 171228 02:28:49 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129441', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------11786141561289938884941908750'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:49 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.65ms
+[E 171228 02:28:49 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129437', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------195559853039681659615319327'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:49 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.99ms
+[E 171228 02:28:50 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129443', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------182663622717702071062008375666'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:50 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.08ms
+[E 171228 02:28:50 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129441', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------51643669010055748271236679409'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:50 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.89ms
+[E 171228 02:28:50 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129439', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------1530308146547773011543170558'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:50 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.03ms
+[E 171228 02:28:50 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129439', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------2184867101668973824630440296'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:50 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.86ms
+[E 171228 02:28:50 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129441', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------13288237438197446211720396646'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:50 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.68ms
+[E 171228 02:28:51 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129443', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------102108254315133165411386250903'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:51 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.04ms
+[E 171228 02:28:51 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129437', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------312879016613804161517584534'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:51 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.79ms
+[E 171228 02:28:51 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129441', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------20523428252513527331252474345'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:51 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.11ms
+[I 171228 02:28:53 web:1971] 304 GET /profile.html (127.0.0.1) 1.47ms
+[I 171228 02:28:53 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 16.00ms
+[I 171228 02:28:53 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.44ms
+[I 171228 02:28:53 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 13.33ms
+[I 171228 02:28:53 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 36.06ms
+[I 171228 02:28:53 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 8.83ms
+[I 171228 02:28:53 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.15ms
+[I 171228 02:28:53 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 26.07ms
+[I 171228 02:28:53 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.35ms
+[I 171228 02:28:53 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 32.38ms
+[I 171228 02:28:53 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 346.71ms
+[I 171228 02:28:53 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.52ms
+[I 171228 02:28:53 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 9.50ms
+[I 171228 02:28:53 web:1971] 304 GET /static/media/22.jpg (127.0.0.1) 12.88ms
+[I 171228 02:28:53 web:1971] 304 GET /api/profile (127.0.0.1) 1.43ms
+[E 171228 02:28:54 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129441', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------94443259914336710421420044462'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:54 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.39ms
+[E 171228 02:28:54 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129437', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------336283608164955411474821763'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:54 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.22ms
+[E 171228 02:28:54 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129441', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------15767989181034982251996311939'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:54 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.72ms
+[E 171228 02:28:54 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129437', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------597555662163223471816056560'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:54 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.04ms
+[E 171228 02:28:54 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129443', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------178015221312374048901181889453'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:54 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.52ms
+[E 171228 02:28:54 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129441', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------10189194681240533680695786221'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:28:54 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.67ms
+[I 171228 02:31:56 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 02:32:05 web:1971] 304 GET /profile.html (127.0.0.1) 32.84ms
+[I 171228 02:32:05 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 11.04ms
+[I 171228 02:32:05 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.82ms
+[I 171228 02:32:05 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 12.77ms
+[I 171228 02:32:05 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 21.64ms
+[I 171228 02:32:05 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 9.23ms
+[I 171228 02:32:05 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.90ms
+[I 171228 02:32:05 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 6.80ms
+[I 171228 02:32:05 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.16ms
+[I 171228 02:32:05 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 8.22ms
+[I 171228 02:32:05 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 12.72ms
+[I 171228 02:32:05 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 8.93ms
+[I 171228 02:32:05 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.78ms
+[I 171228 02:32:05 web:1971] 304 GET /static/media/22.jpg (127.0.0.1) 24.84ms
+[I 171228 02:32:05 web:1971] 304 GET /api/profile (127.0.0.1) 1.91ms
+[E 171228 02:32:07 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129441', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------13751198606913673151743115340'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:32:07 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 45.58ms
+[I 171228 02:32:40 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 02:32:41 web:1971] 304 GET /profile.html (127.0.0.1) 3.76ms
+[I 171228 02:32:41 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.36ms
+[I 171228 02:32:41 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.91ms
+[I 171228 02:32:41 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.90ms
+[I 171228 02:32:41 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.75ms
+[I 171228 02:32:41 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 2.10ms
+[I 171228 02:32:41 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.38ms
+[I 171228 02:32:41 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.88ms
+[I 171228 02:32:41 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.62ms
+[I 171228 02:32:41 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.67ms
+[I 171228 02:32:41 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.34ms
+[I 171228 02:32:41 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.96ms
+[I 171228 02:32:42 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.08ms
+[I 171228 02:32:42 web:1971] 304 GET /static/media/22.jpg (127.0.0.1) 0.95ms
+[I 171228 02:32:42 web:1971] 304 GET /api/profile (127.0.0.1) 1.94ms
+[E 171228 02:32:44 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129443', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------185780765912278240372063467939'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 51, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:32:44 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 15.05ms
+[I 171228 02:37:15 autoreload:204] /root/PycharmProjects/tornado_test/home/constants.py modified; restarting server
+[E 171228 02:37:22 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129437', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------150742649976163155451755987'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:37:22 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 3.21ms
+[E 171228 02:37:52 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '129439', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------2989757131963203430246109843'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:37:52 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.27ms
+[I 171228 02:38:07 web:1971] 304 GET /api/profile (127.0.0.1) 3.01ms
+[I 171228 02:38:10 web:1971] 304 GET /my.html (127.0.0.1) 56.51ms
+[I 171228 02:38:10 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 0.96ms
+[I 171228 02:38:10 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.64ms
+[I 171228 02:38:10 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.58ms
+[I 171228 02:38:10 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.59ms
+[I 171228 02:38:10 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.53ms
+[I 171228 02:38:10 web:1971] 304 GET /static/css/ihome/my.css (127.0.0.1) 48.77ms
+[I 171228 02:38:10 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.68ms
+[I 171228 02:38:10 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.50ms
+[I 171228 02:38:10 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.49ms
+[I 171228 02:38:10 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.62ms
+[I 171228 02:38:10 web:1971] 304 GET /static/js/ihome/my.js (127.0.0.1) 1.27ms
+[I 171228 02:38:10 web:1971] 304 GET /api/profile (127.0.0.1) 1.36ms
+[I 171228 02:38:13 web:1971] 304 GET /profile.html (127.0.0.1) 1.01ms
+[I 171228 02:38:13 web:1971] 200 GET /static/js/ihome/profile.js (127.0.0.1) 1.68ms
+[I 171228 02:38:13 web:1971] 304 GET /api/profile (127.0.0.1) 1.45ms
+[I 171228 02:38:46 web:1971] 200 GET /profile.html (127.0.0.1) 0.89ms
+[I 171228 02:38:46 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.11ms
+[I 171228 02:38:46 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.87ms
+[I 171228 02:38:46 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.10ms
+[I 171228 02:38:46 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.89ms
+[I 171228 02:38:46 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.83ms
+[I 171228 02:38:46 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.04ms
+[I 171228 02:38:46 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.17ms
+[I 171228 02:38:46 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.97ms
+[I 171228 02:38:46 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.00ms
+[I 171228 02:38:46 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.07ms
+[I 171228 02:38:46 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.05ms
+[I 171228 02:38:46 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.94ms
+[I 171228 02:38:46 web:1971] 304 GET /static/media/22.jpg (127.0.0.1) 1.04ms
+[I 171228 02:38:46 web:1971] 304 GET /api/profile (127.0.0.1) 2.61ms
+[I 171228 02:38:47 web:1971] 304 GET /profile.html (127.0.0.1) 0.98ms
+[I 171228 02:38:47 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.37ms
+[I 171228 02:38:47 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.81ms
+[I 171228 02:38:47 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.73ms
+[I 171228 02:38:47 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.91ms
+[I 171228 02:38:47 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.74ms
+[I 171228 02:38:47 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.78ms
+[I 171228 02:38:47 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.22ms
+[I 171228 02:38:48 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.05ms
+[I 171228 02:38:48 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.94ms
+[I 171228 02:38:48 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.84ms
+[I 171228 02:38:48 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.96ms
+[I 171228 02:38:48 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.69ms
+[I 171228 02:38:48 web:1971] 304 GET /static/media/22.jpg (127.0.0.1) 1.02ms
+[I 171228 02:38:48 web:1971] 304 GET /api/profile (127.0.0.1) 2.58ms
+[I 171228 02:39:29 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 276.75ms
+[I 171228 02:40:35 web:1971] 200 GET /profile.html (127.0.0.1) 1.40ms
+[I 171228 02:40:35 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 164.57ms
+[I 171228 02:40:36 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 76.92ms
+[I 171228 02:40:36 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 59.58ms
+[I 171228 02:40:36 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 132.25ms
+[I 171228 02:40:36 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 54.49ms
+[I 171228 02:40:36 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 43.22ms
+[I 171228 02:40:36 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.35ms
+[I 171228 02:40:36 web:1971] 304 GET /static/media/22.jpg (127.0.0.1) 22.16ms
+[I 171228 02:40:36 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 38.03ms
+[I 171228 02:40:36 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 62.88ms
+[I 171228 02:40:36 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 57.30ms
+[I 171228 02:40:36 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 101.22ms
+[I 171228 02:40:36 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.17ms
+[I 171228 02:40:36 web:1971] 304 GET /api/profile (127.0.0.1) 2.34ms
+[I 171228 02:40:42 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.45ms
+[I 171228 02:41:49 web:1971] 200 GET /profile.html (127.0.0.1) 0.89ms
+[I 171228 02:41:49 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.05ms
+[I 171228 02:41:49 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.74ms
+[I 171228 02:41:49 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.85ms
+[I 171228 02:41:49 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.95ms
+[I 171228 02:41:49 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.58ms
+[I 171228 02:41:49 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.59ms
+[I 171228 02:41:49 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.13ms
+[I 171228 02:41:49 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.61ms
+[I 171228 02:41:49 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.66ms
+[I 171228 02:41:49 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.48ms
+[I 171228 02:41:49 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.47ms
+[I 171228 02:41:49 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.88ms
+[I 171228 02:41:49 web:1971] 200 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 1.37ms
+[I 171228 02:41:50 web:1971] 304 GET /api/profile (127.0.0.1) 1.84ms
+[E 171228 02:42:03 Profile:39] 'NoneType' object has no attribute '__getitem__'
+[I 171228 02:42:03 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 0.94ms
+[E 171228 02:42:08 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------96256458815051489661256682283'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:42:08 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.59ms
+[I 171228 02:43:07 web:1971] 304 GET /api/profile (127.0.0.1) 1.72ms
+[I 171228 02:43:09 web:1971] 200 GET /my.html (127.0.0.1) 1.12ms
+[I 171228 02:43:09 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.07ms
+[I 171228 02:43:09 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.00ms
+[I 171228 02:43:09 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.65ms
+[I 171228 02:43:09 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.87ms
+[I 171228 02:43:09 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.61ms
+[I 171228 02:43:09 web:1971] 304 GET /static/css/ihome/my.css (127.0.0.1) 41.19ms
+[I 171228 02:43:09 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.88ms
+[I 171228 02:43:09 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.81ms
+[I 171228 02:43:09 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.00ms
+[I 171228 02:43:09 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.16ms
+[I 171228 02:43:09 web:1971] 304 GET /static/js/ihome/my.js (127.0.0.1) 5.64ms
+[I 171228 02:43:09 web:1971] 304 GET /static/media/22.jpg (127.0.0.1) 0.71ms
+[I 171228 02:43:09 web:1971] 304 GET /api/profile (127.0.0.1) 1.31ms
+[I 171228 02:44:26 autoreload:204] /root/PycharmProjects/tornado_test/home/constants.py modified; restarting server
+[I 171228 02:44:33 web:1971] 200 GET /profile.html (127.0.0.1) 22.08ms
+[I 171228 02:44:33 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.77ms
+[I 171228 02:44:33 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.70ms
+[I 171228 02:44:33 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.97ms
+[I 171228 02:44:33 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.67ms
+[I 171228 02:44:33 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.97ms
+[I 171228 02:44:33 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 4.64ms
+[I 171228 02:44:33 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.96ms
+[I 171228 02:44:33 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 6.04ms
+[I 171228 02:44:33 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.80ms
+[I 171228 02:44:33 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.58ms
+[I 171228 02:44:33 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.53ms
+[I 171228 02:44:33 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.75ms
+[I 171228 02:44:33 web:1971] 304 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 1.08ms
+[I 171228 02:44:33 web:1971] 304 GET /api/profile (127.0.0.1) 3.44ms
+[E 171228 02:44:39 Profile:39] [Errno 2] No such file or directory: '/static/media/dd1ee4b4ced44b49913e7abee85c6f17.jpg'
+[I 171228 02:44:39 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 33.90ms
+[I 171228 02:45:09 web:1971] 304 GET /profile.html (127.0.0.1) 0.69ms
+[I 171228 02:45:09 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.46ms
+[I 171228 02:45:09 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.84ms
+[I 171228 02:45:09 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.81ms
+[I 171228 02:45:09 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.63ms
+[I 171228 02:45:09 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.32ms
+[I 171228 02:45:09 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.72ms
+[I 171228 02:45:09 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.80ms
+[I 171228 02:45:09 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.70ms
+[I 171228 02:45:09 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.90ms
+[I 171228 02:45:09 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.86ms
+[I 171228 02:45:09 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.79ms
+[I 171228 02:45:09 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.67ms
+[I 171228 02:45:09 web:1971] 304 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 0.97ms
+[I 171228 02:45:09 web:1971] 304 GET /api/profile (127.0.0.1) 3.01ms
+[E 171228 02:45:10 Profile:39] [Errno 2] No such file or directory: '/static/media/f50398ccf49e4a889e361f3f7e176e05.jpg'
+[I 171228 02:45:10 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 1.08ms
+[I 171228 02:45:31 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[E 171228 02:45:32 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53133', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------458239905484244071334236728'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:45:32 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 26.84ms
+[I 171228 02:48:02 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 02:48:04 web:1971] 304 GET /profile.html (127.0.0.1) 3.42ms
+[I 171228 02:48:04 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.30ms
+[I 171228 02:48:04 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.81ms
+[I 171228 02:48:04 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.68ms
+[I 171228 02:48:04 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.66ms
+[I 171228 02:48:04 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.91ms
+[I 171228 02:48:04 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.03ms
+[I 171228 02:48:04 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.83ms
+[I 171228 02:48:04 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.93ms
+[I 171228 02:48:04 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.72ms
+[I 171228 02:48:04 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.69ms
+[I 171228 02:48:04 web:1971] 304 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 1.26ms
+[I 171228 02:48:04 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.71ms
+[I 171228 02:48:04 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.75ms
+[I 171228 02:48:04 web:1971] 304 GET /api/profile (127.0.0.1) 1.82ms
+[E 171228 02:48:05 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------20188107441183433884462279171'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 48, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:48:05 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.69ms
+[E 171228 02:48:10 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53135', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------3367042897980639071257360693'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 48, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 02:48:10 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.62ms
+[I 171228 02:50:15 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 02:50:17 web:1971] 304 GET /profile.html (127.0.0.1) 4.51ms
+[I 171228 02:50:17 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.28ms
+[I 171228 02:50:17 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.87ms
+[I 171228 02:50:17 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.81ms
+[I 171228 02:50:17 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.90ms
+[I 171228 02:50:17 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.94ms
+[I 171228 02:50:17 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.83ms
+[I 171228 02:50:17 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.21ms
+[I 171228 02:50:17 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.98ms
+[I 171228 02:50:17 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.96ms
+[I 171228 02:50:17 web:1971] 304 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 1.19ms
+[I 171228 02:50:17 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.60ms
+[I 171228 02:50:17 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.62ms
+[I 171228 02:50:17 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.61ms
+[I 171228 02:50:17 web:1971] 304 GET /api/profile (127.0.0.1) 1.65ms
+[I 171228 02:50:19 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 1.65ms
+[I 171228 02:50:58 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 02:51:00 web:1971] 304 GET /profile.html (127.0.0.1) 3.46ms
+[I 171228 02:51:00 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.31ms
+[I 171228 02:51:00 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.99ms
+[I 171228 02:51:00 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.04ms
+[I 171228 02:51:00 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.04ms
+[I 171228 02:51:00 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.72ms
+[I 171228 02:51:00 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.90ms
+[I 171228 02:51:00 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.02ms
+[I 171228 02:51:00 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.73ms
+[I 171228 02:51:01 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.55ms
+[I 171228 02:51:01 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.85ms
+[I 171228 02:51:01 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.82ms
+[I 171228 02:51:01 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.70ms
+[I 171228 02:51:01 web:1971] 304 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 1.26ms
+[I 171228 02:51:01 web:1971] 304 GET /api/profile (127.0.0.1) 2.20ms
+[E 171228 02:51:02 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53131', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------74003283288361761748025647'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 46, in post
+        return self.write(dict(errcode="123", errmsg='hello', data="%s")%img)
+    TypeError: unsupported operand type(s) for %: 'dict' and 'str'
+[E 171228 02:51:02 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.28ms
+[E 171228 02:51:03 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------16279726231362008581109891244'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 46, in post
+        return self.write(dict(errcode="123", errmsg='hello', data="%s")%img)
+    TypeError: unsupported operand type(s) for %: 'dict' and 'str'
+[E 171228 02:51:03 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.27ms
+[I 171228 02:51:04 web:1971] 304 GET /profile.html (127.0.0.1) 0.84ms
+[I 171228 02:51:04 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.14ms
+[I 171228 02:51:04 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.83ms
+[I 171228 02:51:04 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.78ms
+[I 171228 02:51:04 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.88ms
+[I 171228 02:51:04 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.77ms
+[I 171228 02:51:04 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.76ms
+[I 171228 02:51:04 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.07ms
+[I 171228 02:51:04 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.81ms
+[I 171228 02:51:04 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.92ms
+[I 171228 02:51:04 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.85ms
+[I 171228 02:51:04 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.75ms
+[I 171228 02:51:04 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.22ms
+[I 171228 02:51:04 web:1971] 304 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 1.19ms
+[I 171228 02:51:05 web:1971] 304 GET /api/profile (127.0.0.1) 2.18ms
+[E 171228 02:51:05 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------14832403768113625211713422213'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 46, in post
+        return self.write(dict(errcode="123", errmsg='hello', data="%s")%img)
+    TypeError: unsupported operand type(s) for %: 'dict' and 'str'
+[E 171228 02:51:05 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.97ms
+[I 171228 02:52:37 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 02:52:38 web:1971] 304 GET /profile.html (127.0.0.1) 3.43ms
+[I 171228 02:52:38 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.07ms
+[I 171228 02:52:38 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.77ms
+[I 171228 02:52:38 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.85ms
+[I 171228 02:52:38 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.83ms
+[I 171228 02:52:38 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.25ms
+[I 171228 02:52:38 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 2.36ms
+[I 171228 02:52:38 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.11ms
+[I 171228 02:52:38 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.65ms
+[I 171228 02:52:38 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.68ms
+[I 171228 02:52:38 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.84ms
+[I 171228 02:52:38 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.55ms
+[I 171228 02:52:38 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.58ms
+[I 171228 02:52:38 web:1971] 304 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 0.90ms
+[I 171228 02:52:38 web:1971] 304 GET /api/profile (127.0.0.1) 1.83ms
+[I 171228 02:52:51 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 1.14ms
+[I 171228 02:52:56 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 1.32ms
+[I 171228 02:53:50 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 0.97ms
+[I 171228 02:53:52 web:1971] 304 GET /profile.html (127.0.0.1) 0.92ms
+[I 171228 02:53:52 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.17ms
+[I 171228 02:53:52 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.88ms
+[I 171228 02:53:52 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.59ms
+[I 171228 02:53:52 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.62ms
+[I 171228 02:53:52 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.58ms
+[I 171228 02:53:52 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.68ms
+[I 171228 02:53:52 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.09ms
+[I 171228 02:53:52 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.72ms
+[I 171228 02:53:52 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.71ms
+[I 171228 02:53:52 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.69ms
+[I 171228 02:53:52 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.60ms
+[I 171228 02:53:52 web:1971] 200 GET /static/js/ihome/profile.js (127.0.0.1) 1.79ms
+[I 171228 02:53:52 web:1971] 304 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 0.95ms
+[I 171228 02:53:52 web:1971] 304 GET /api/profile (127.0.0.1) 1.91ms
+[I 171228 02:53:53 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 1.18ms
+[I 171228 02:55:11 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 02:55:12 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 2.47ms
+[I 171228 02:55:14 web:1971] 304 GET /profile.html (127.0.0.1) 3.67ms
+[I 171228 02:55:14 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.46ms
+[I 171228 02:55:14 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.73ms
+[I 171228 02:55:14 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.74ms
+[I 171228 02:55:14 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.17ms
+[I 171228 02:55:14 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.82ms
+[I 171228 02:55:14 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.18ms
+[I 171228 02:55:14 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.87ms
+[I 171228 02:55:14 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.68ms
+[I 171228 02:55:14 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.20ms
+[I 171228 02:55:14 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.77ms
+[I 171228 02:55:14 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.76ms
+[I 171228 02:55:14 web:1971] 200 GET /static/js/ihome/profile.js (127.0.0.1) 0.79ms
+[I 171228 02:55:14 web:1971] 304 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 1.15ms
+[I 171228 02:55:14 web:1971] 304 GET /api/profile (127.0.0.1) 3.07ms
+[I 171228 02:55:15 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 1.53ms
+[I 171228 02:55:42 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 02:55:43 web:1971] 304 GET /profile.html (127.0.0.1) 3.89ms
+[I 171228 02:55:43 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.68ms
+[I 171228 02:55:43 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.96ms
+[I 171228 02:55:43 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.93ms
+[I 171228 02:55:43 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.70ms
+[I 171228 02:55:43 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 6.01ms
+[I 171228 02:55:43 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.68ms
+[I 171228 02:55:43 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.85ms
+[I 171228 02:55:43 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.68ms
+[I 171228 02:55:43 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 7.02ms
+[I 171228 02:55:43 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.83ms
+[I 171228 02:55:43 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.73ms
+[I 171228 02:55:43 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.74ms
+[I 171228 02:55:43 web:1971] 304 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 1.11ms
+[I 171228 02:55:43 web:1971] 304 GET /api/profile (127.0.0.1) 2.18ms
+[I 171228 02:55:44 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 0.98ms
+[I 171228 02:56:21 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 02:56:21 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 1.70ms
+[I 171228 02:57:36 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 03:00:31 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 03:37:00 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 03:37:07 web:1971] 304 GET /profile.html (127.0.0.1) 182.07ms
+[I 171228 03:37:08 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 66.73ms
+[I 171228 03:37:08 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 4.70ms
+[I 171228 03:37:08 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 21.03ms
+[I 171228 03:37:08 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.56ms
+[I 171228 03:37:08 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.38ms
+[I 171228 03:37:08 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 16.17ms
+[I 171228 03:37:08 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 74.91ms
+[I 171228 03:37:08 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 18.62ms
+[I 171228 03:37:08 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 12.81ms
+[I 171228 03:37:08 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 13.03ms
+[I 171228 03:37:08 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 86.38ms
+[I 171228 03:37:08 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 12.88ms
+[I 171228 03:37:08 web:1971] 304 GET /static/media/20d33f6db264449ebeec262b7caeb952.jpg (127.0.0.1) 26.16ms
+[I 171228 03:37:09 web:1971] 304 GET /api/profile (127.0.0.1) 411.08ms
+[E 171228 03:37:11 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53133', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|7b9ebc3b|a08d5bbf1494b24a250f59d534abb0ac|1514397565; session_id="2|1:0|10:1514397565|10:session_id|44:NjQwNGU0YWRkYjlhNGY3Mzg1ZGU1OTk3NzE0MDM5M2Q=|9f5c8e680aaedc6b346f929c2c5e149ce671192449233ea37208648c3ef27094"', 'Content-Type': 'multipart/form-data; boundary=---------------------------184530767536855313485201797'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 49, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:37:11 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 300.67ms
+[I 171228 03:37:14 web:1971] 304 GET /my.html (127.0.0.1) 19.62ms
+[I 171228 03:37:15 web:1971] 304 GET /api/profile (127.0.0.1) 1.53ms
+[I 171228 03:37:16 web:1971] 304 GET /my.html (127.0.0.1) 0.85ms
+[I 171228 03:37:16 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.00ms
+[I 171228 03:37:16 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.82ms
+[I 171228 03:37:16 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.27ms
+[I 171228 03:37:16 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.83ms
+[I 171228 03:37:17 web:1971] 304 GET /static/css/ihome/my.css (127.0.0.1) 26.57ms
+[I 171228 03:37:17 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.91ms
+[I 171228 03:37:17 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.64ms
+[I 171228 03:37:17 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.67ms
+[I 171228 03:37:17 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.81ms
+[I 171228 03:37:17 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.70ms
+[I 171228 03:37:17 web:1971] 304 GET /static/js/ihome/my.js (127.0.0.1) 1.15ms
+[I 171228 03:37:17 web:1971] 304 GET /static/media/22.jpg (127.0.0.1) 13.49ms
+[I 171228 03:37:17 web:1971] 304 GET /api/profile (127.0.0.1) 1.20ms
+[I 171228 03:37:20 web:1971] 304 GET /api/profile (127.0.0.1) 1.79ms
+[I 171228 03:38:20 web:1971] 304 GET /api/profile (127.0.0.1) 1.87ms
+[I 171228 03:39:46 web:1971] 304 GET /my.html (127.0.0.1) 3.39ms
+[I 171228 03:39:47 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.17ms
+[I 171228 03:39:47 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.76ms
+[I 171228 03:39:47 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.83ms
+[I 171228 03:39:47 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.97ms
+[I 171228 03:39:47 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.34ms
+[I 171228 03:39:47 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.79ms
+[I 171228 03:39:47 web:1971] 304 GET /static/js/ihome/my.js (127.0.0.1) 1.11ms
+[I 171228 03:39:47 web:1971] 304 GET /static/css/ihome/my.css (127.0.0.1) 4.84ms
+[I 171228 03:39:47 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.96ms
+[I 171228 03:39:47 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.43ms
+[I 171228 03:39:47 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.81ms
+[I 171228 03:39:47 web:1971] 304 GET /static/media/22.jpg (127.0.0.1) 7.20ms
+[I 171228 03:39:47 web:1971] 304 GET /api/profile (127.0.0.1) 1.77ms
+[I 171228 03:41:18 web:1971] 200 GET / (127.0.0.1) 35.26ms
+[I 171228 03:41:18 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.48ms
+[I 171228 03:41:18 web:1971] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.01ms
+[I 171228 03:41:18 web:1971] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 81.47ms
+[I 171228 03:41:18 web:1971] 200 GET /static/css/ihome/main.css (127.0.0.1) 1.29ms
+[I 171228 03:41:18 web:1971] 200 GET /static/css/ihome/index.css (127.0.0.1) 13.79ms
+[I 171228 03:41:18 web:1971] 200 GET /static/js/jquery.min.js (127.0.0.1) 1.33ms
+[I 171228 03:41:18 web:1971] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.03ms
+[I 171228 03:41:18 web:1971] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.91ms
+[I 171228 03:41:18 web:1971] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 16.49ms
+[I 171228 03:41:18 web:1971] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.53ms
+[I 171228 03:41:18 web:1971] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.78ms
+[I 171228 03:41:18 web:1971] 200 GET /static/css/reset.css (127.0.0.1) 6.92ms
+[I 171228 03:41:18 web:1971] 200 GET /static/js/template.js (127.0.0.1) 37.17ms
+[I 171228 03:41:18 web:1971] 200 GET /static/js/ihome/index.js (127.0.0.1) 9.79ms
+[I 171228 03:41:18 web:1971] 200 GET /static/images/logo@128x59.png (127.0.0.1) 2.47ms
+[I 171228 03:41:18 web:1971] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 26.42ms
+[I 171228 03:41:18 web:1971] 200 GET /api/check_login (127.0.0.1) 0.70ms
+[I 171228 03:41:18 web:1971] 200 GET /api/house/index (127.0.0.1) 0.86ms
+[I 171228 03:41:18 web:1971] 200 GET /favicon.ico (127.0.0.1) 19.21ms
+[I 171228 03:41:20 web:1971] 200 GET /login.html (127.0.0.1) 14.89ms
+[I 171228 03:41:20 web:1971] 200 GET /static/css/ihome/login.css (127.0.0.1) 6.96ms
+[I 171228 03:41:20 web:1971] 200 GET /static/js/ihome/login.js (127.0.0.1) 18.92ms
+[I 171228 03:41:27 web:1971] 200 POST /api/login (127.0.0.1) 102.31ms
+[I 171228 03:41:27 web:1971] 200 GET /api/check_login (127.0.0.1) 36.01ms
+[I 171228 03:41:27 web:1971] 304 GET /api/house/index (127.0.0.1) 1.40ms
+[I 171228 03:41:29 web:1971] 200 GET /my.html (127.0.0.1) 1.57ms
+[I 171228 03:41:29 web:1971] 200 GET /static/css/ihome/my.css (127.0.0.1) 0.95ms
+[I 171228 03:41:29 web:1971] 200 GET /static/media/22.jpg (127.0.0.1) 1.03ms
+[I 171228 03:41:29 web:1971] 200 GET /static/js/ihome/my.js (127.0.0.1) 0.97ms
+[I 171228 03:41:29 web:1971] 200 GET /api/profile (127.0.0.1) 1.37ms
+[I 171228 03:41:42 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 30.40ms
+[I 171228 03:42:44 web:1971] 200 GET /my.html (127.0.0.1) 1.08ms
+[I 171228 03:42:44 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.20ms
+[I 171228 03:42:44 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.72ms
+[I 171228 03:42:44 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.66ms
+[I 171228 03:42:44 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.91ms
+[I 171228 03:42:44 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.66ms
+[I 171228 03:42:44 web:1971] 304 GET /static/css/ihome/my.css (127.0.0.1) 0.66ms
+[I 171228 03:42:44 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.05ms
+[I 171228 03:42:44 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.82ms
+[I 171228 03:42:44 web:1971] 304 GET /static/js/ihome/my.js (127.0.0.1) 0.85ms
+[I 171228 03:42:44 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.07ms
+[I 171228 03:42:44 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.67ms
+[I 171228 03:42:45 web:1971] 304 GET /api/profile (127.0.0.1) 1.86ms
+[I 171228 03:42:45 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.53ms
+[I 171228 03:43:15 web:1971] 200 GET /profile.html (127.0.0.1) 1.15ms
+[I 171228 03:43:15 web:1971] 200 GET /static/css/ihome/profile.css (127.0.0.1) 21.11ms
+[I 171228 03:43:15 web:1971] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 16.49ms
+[I 171228 03:43:15 web:1971] 200 GET /static/js/ihome/profile.js (127.0.0.1) 10.06ms
+[I 171228 03:43:15 web:1971] 304 GET /api/profile (127.0.0.1) 2.09ms
+[I 171228 03:43:16 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.08ms
+[E 171228 03:43:23 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------12594721052036145101941577161'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 49, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:43:23 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 122.88ms
+[I 171228 03:45:02 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 03:45:12 web:1971] 304 GET /profile.html (127.0.0.1) 138.17ms
+[I 171228 03:45:12 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.74ms
+[I 171228 03:45:12 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.06ms
+[I 171228 03:45:12 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.16ms
+[I 171228 03:45:12 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 5.16ms
+[I 171228 03:45:12 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.22ms
+[I 171228 03:45:12 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 4.78ms
+[I 171228 03:45:12 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.62ms
+[I 171228 03:45:12 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.68ms
+[I 171228 03:45:12 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.77ms
+[I 171228 03:45:12 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.64ms
+[I 171228 03:45:12 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 9.49ms
+[I 171228 03:45:12 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.74ms
+[I 171228 03:45:13 web:1971] 304 GET /api/profile (127.0.0.1) 138.10ms
+[I 171228 03:45:13 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.94ms
+[E 171228 03:45:18 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53135', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------5933532804007421131114979945'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 49, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:45:18 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 78.60ms
+[E 171228 03:45:25 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------29706481019208250462091076889'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 49, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:45:25 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.83ms
+[I 171228 03:46:15 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[E 171228 03:46:16 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------16464592786157921781838059363'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 49, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:46:16 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 3.24ms
+[I 171228 03:46:18 web:1971] 304 GET /profile.html (127.0.0.1) 3.30ms
+[I 171228 03:46:18 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.60ms
+[I 171228 03:46:18 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.95ms
+[I 171228 03:46:18 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.37ms
+[I 171228 03:46:18 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 4.37ms
+[I 171228 03:46:18 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.77ms
+[I 171228 03:46:18 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.92ms
+[I 171228 03:46:18 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.98ms
+[I 171228 03:46:18 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.20ms
+[I 171228 03:46:18 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.14ms
+[I 171228 03:46:18 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.43ms
+[I 171228 03:46:18 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.07ms
+[I 171228 03:46:18 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 2.39ms
+[I 171228 03:46:18 web:1971] 304 GET /api/profile (127.0.0.1) 2.99ms
+[I 171228 03:46:19 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.91ms
+[E 171228 03:46:20 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------14807118266480521951932538659'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 49, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:46:20 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.91ms
+[I 171228 03:49:00 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[E 171228 03:49:07 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53135', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------1627599450221989543235173229'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:49:07 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.82ms
+[E 171228 03:49:07 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53133', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------214683114330454424895465755'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:49:07 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.10ms
+[E 171228 03:49:08 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53135', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------1054743831513174522696263269'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:49:08 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 13.88ms
+[E 171228 03:49:11 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------16940339621157824940802378235'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:49:11 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.51ms
+[E 171228 03:49:11 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53139', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------106341221717867212641528790597'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:49:11 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.78ms
+[E 171228 03:49:12 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53135', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------1970398476111994944229359144'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:49:12 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.50ms
+[E 171228 03:49:12 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------17554534871602057934372392570'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:49:12 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.74ms
+[I 171228 03:50:19 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 03:50:20 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 1.79ms
+[I 171228 03:50:45 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[E 171228 03:50:45 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------12830796031939843243479186897'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:50:45 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 4.30ms
+[I 171228 03:50:47 web:1971] 304 GET /profile.html (127.0.0.1) 2.99ms
+[I 171228 03:50:47 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.54ms
+[I 171228 03:50:47 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.71ms
+[I 171228 03:50:47 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.59ms
+[I 171228 03:50:47 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.79ms
+[I 171228 03:50:47 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.68ms
+[I 171228 03:50:47 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.72ms
+[I 171228 03:50:47 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.93ms
+[I 171228 03:50:47 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.70ms
+[I 171228 03:50:47 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.82ms
+[I 171228 03:50:47 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.75ms
+[I 171228 03:50:47 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.93ms
+[I 171228 03:50:47 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.77ms
+[I 171228 03:50:48 web:1971] 304 GET /api/profile (127.0.0.1) 3.00ms
+[I 171228 03:50:48 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.89ms
+[E 171228 03:50:49 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------19511767071919999722101973895'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:50:49 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.55ms
+[E 171228 03:50:51 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53133', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------879455706218795401196641363'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:50:51 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.45ms
+[E 171228 03:50:52 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53135', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------1099124797914410478781724675'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:50:52 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.67ms
+[E 171228 03:50:52 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53133', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------101772681529135752129330832'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:50:52 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.33ms
+[E 171228 03:50:53 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------34739063311341273551097437317'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:50:53 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.36ms
+[E 171228 03:50:53 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53139', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------190560833312961641241773371021'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:50:53 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.40ms
+[I 171228 03:53:32 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 03:53:34 web:1971] 304 GET /profile.html (127.0.0.1) 3.57ms
+[I 171228 03:53:34 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.08ms
+[I 171228 03:53:34 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.81ms
+[I 171228 03:53:34 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.01ms
+[I 171228 03:53:34 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.80ms
+[I 171228 03:53:34 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.58ms
+[I 171228 03:53:34 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.58ms
+[I 171228 03:53:34 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.81ms
+[I 171228 03:53:34 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.61ms
+[I 171228 03:53:34 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.69ms
+[I 171228 03:53:34 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.68ms
+[I 171228 03:53:34 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.60ms
+[I 171228 03:53:34 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.58ms
+[I 171228 03:53:34 web:1971] 304 GET /api/profile (127.0.0.1) 3.32ms
+[I 171228 03:53:35 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.48ms
+[E 171228 03:53:35 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53137', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------16182832711986561426652658111'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:53:35 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 4.22ms
+[E 171228 03:53:37 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53135', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------1166740162733300531184183990'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:53:37 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.41ms
+[E 171228 03:53:37 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53135', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------5104609351051304476173120866'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:53:37 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.97ms
+[E 171228 03:53:38 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53129', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------8355677272056953247531039'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:53:38 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 1.54ms
+[I 171228 03:55:01 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 03:55:11 web:1971] 304 GET /profile.html (127.0.0.1) 21.85ms
+[I 171228 03:55:12 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 12.07ms
+[I 171228 03:55:12 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.39ms
+[I 171228 03:55:12 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 23.28ms
+[I 171228 03:55:12 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 21.93ms
+[I 171228 03:55:12 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 9.02ms
+[I 171228 03:55:12 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.94ms
+[I 171228 03:55:12 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 6.68ms
+[I 171228 03:55:12 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.25ms
+[I 171228 03:55:12 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 7.85ms
+[I 171228 03:55:12 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 13.14ms
+[I 171228 03:55:12 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 53.16ms
+[I 171228 03:55:12 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 12.44ms
+[I 171228 03:55:12 web:1971] 304 GET /api/profile (127.0.0.1) 65.58ms
+[I 171228 03:55:13 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 20.47ms
+[E 171228 03:55:15 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53139', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------119608412511399502631224946494'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:55:15 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 55.87ms
+[I 171228 03:55:34 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[E 171228 03:55:44 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53133', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------698275983910748693669580842'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:55:44 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.46ms
+[I 171228 03:55:46 web:1971] 304 GET /profile.html (127.0.0.1) 29.38ms
+[I 171228 03:55:46 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.38ms
+[I 171228 03:55:46 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.81ms
+[I 171228 03:55:46 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.82ms
+[I 171228 03:55:46 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.78ms
+[I 171228 03:55:46 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.84ms
+[I 171228 03:55:46 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.52ms
+[I 171228 03:55:46 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.54ms
+[I 171228 03:55:46 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.63ms
+[I 171228 03:55:46 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.81ms
+[I 171228 03:55:46 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.92ms
+[I 171228 03:55:46 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.84ms
+[I 171228 03:55:46 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.84ms
+[I 171228 03:55:46 web:1971] 304 GET /api/profile (127.0.0.1) 3.11ms
+[I 171228 03:55:47 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.08ms
+[E 171228 03:55:47 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53139', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------210597955514597010801180830157'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:55:47 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 2.05ms
+[I 171228 03:56:01 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 03:56:03 web:1971] 304 GET /profile.html (127.0.0.1) 3.35ms
+[I 171228 03:56:03 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.11ms
+[I 171228 03:56:03 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.77ms
+[I 171228 03:56:03 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.58ms
+[I 171228 03:56:03 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.68ms
+[I 171228 03:56:03 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.61ms
+[I 171228 03:56:03 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.58ms
+[I 171228 03:56:03 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.82ms
+[I 171228 03:56:03 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.77ms
+[I 171228 03:56:03 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.00ms
+[I 171228 03:56:03 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.82ms
+[I 171228 03:56:03 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.59ms
+[I 171228 03:56:03 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.58ms
+[I 171228 03:56:03 web:1971] 304 GET /api/profile (127.0.0.1) 2.31ms
+[I 171228 03:56:04 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.85ms
+[E 171228 03:56:05 web:1548] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Content-Length': '53135', 'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|65f05773|9e52b1b872a42b832f18299dea177e0b|1514403677; session_id="2|1:0|10:1514403678|10:session_id|44:YzJiZmI0MTk2ZDcwNDkxYjlmZjI1ZjExMDc4MjdkYzY=|28e7ee4498b0a125151862db513292401d4d989b64c41ff01bbfec7b0a1fb49b"', 'Content-Type': 'multipart/form-data; boundary=---------------------------6797268241137072899192689668'})
+    Traceback (most recent call last):
+      File "/usr/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/root/PycharmProjects/tornado_test/home/handle/Profile.py", line 50, in post
+        user_id = self.session.data["user_id"]
+    AttributeError: 'Avator' object has no attribute 'session'
+[E 171228 03:56:05 web:1971] 500 POST /api/profile/avatar (127.0.0.1) 3.93ms
+[I 171228 03:58:58 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 03:58:59 web:1971] 304 GET /profile.html (127.0.0.1) 3.73ms
+[I 171228 03:58:59 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.16ms
+[I 171228 03:58:59 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.81ms
+[I 171228 03:59:00 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.59ms
+[I 171228 03:59:00 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.68ms
+[I 171228 03:59:00 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.86ms
+[I 171228 03:59:00 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.77ms
+[I 171228 03:59:00 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.88ms
+[I 171228 03:59:00 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.68ms
+[I 171228 03:59:00 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.74ms
+[I 171228 03:59:00 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.11ms
+[I 171228 03:59:00 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.68ms
+[I 171228 03:59:00 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.64ms
+[I 171228 03:59:00 web:1971] 304 GET /api/profile (127.0.0.1) 1.96ms
+[I 171228 03:59:00 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.37ms
+[I 171228 03:59:01 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 1.24ms
+[I 171228 04:00:00 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Profile.py modified; restarting server
+[I 171228 04:00:02 web:1971] 304 GET /profile.html (127.0.0.1) 3.85ms
+[I 171228 04:00:02 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.18ms
+[I 171228 04:00:02 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.06ms
+[I 171228 04:00:02 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.97ms
+[I 171228 04:00:02 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.79ms
+[I 171228 04:00:02 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.66ms
+[I 171228 04:00:02 web:1971] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 0.56ms
+[I 171228 04:00:02 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.81ms
+[I 171228 04:00:02 web:1971] 304 GET /static/css/ihome/profile.css (127.0.0.1) 0.49ms
+[I 171228 04:00:02 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.46ms
+[I 171228 04:00:02 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.82ms
+[I 171228 04:00:02 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.58ms
+[I 171228 04:00:02 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 0.59ms
+[I 171228 04:00:02 web:1971] 304 GET /api/profile (127.0.0.1) 1.62ms
+[I 171228 04:00:03 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.83ms
+[I 171228 04:00:04 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 783.73ms
+[I 171228 04:00:06 web:1971] 200 GET /static/media/4e3a1e87650b44e282ccacf67c4ebc79.jpg (127.0.0.1) 1.10ms
+[I 171228 04:00:12 web:1971] 304 GET /my.html (127.0.0.1) 26.06ms
+[I 171228 04:00:12 web:1971] 200 GET /api/profile (127.0.0.1) 2.24ms
+[W 171228 04:00:12 web:1971] 404 GET /static/media/'4e3a1e87650b44e282ccacf67c4ebc79.jpg (127.0.0.1) 2.13ms
+[I 171228 04:00:13 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 4.30ms
+[I 171228 04:00:14 web:1971] 304 GET /my.html (127.0.0.1) 1.24ms
+[I 171228 04:00:15 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.01ms
+[I 171228 04:00:15 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.72ms
+[I 171228 04:00:15 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.00ms
+[I 171228 04:00:15 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.98ms
+[I 171228 04:00:15 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.80ms
+[I 171228 04:00:15 web:1971] 304 GET /static/css/ihome/my.css (127.0.0.1) 80.98ms
+[I 171228 04:00:15 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.70ms
+[I 171228 04:00:15 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.60ms
+[I 171228 04:00:15 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.75ms
+[I 171228 04:00:15 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 0.84ms
+[I 171228 04:00:15 web:1971] 304 GET /static/js/ihome/my.js (127.0.0.1) 1.75ms
+[I 171228 04:00:15 web:1971] 304 GET /api/profile (127.0.0.1) 1.55ms
+[W 171228 04:00:15 web:1971] 404 GET /static/media/'4e3a1e87650b44e282ccacf67c4ebc79.jpg (127.0.0.1) 0.94ms
+[I 171228 04:00:15 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.79ms
+[I 171228 04:00:28 web:1971] 304 GET /api/profile (127.0.0.1) 1.36ms
+[W 171228 04:00:29 web:1971] 404 GET /static/media/'4e3a1e87650b44e282ccacf67c4ebc79.jpg (127.0.0.1) 0.92ms
+[I 171228 04:00:29 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.10ms
+[I 171228 04:00:34 web:1971] 304 GET /api/profile (127.0.0.1) 1.46ms
+[W 171228 04:00:34 web:1971] 404 GET /static/media/'4e3a1e87650b44e282ccacf67c4ebc79.jpg (127.0.0.1) 0.94ms
+[I 171228 04:00:35 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.55ms
+[I 171228 04:01:35 autoreload:204] /root/PycharmProjects/tornado_test/home/constants.py modified; restarting server
+[I 171228 04:02:11 web:1971] 304 GET /profile.html (127.0.0.1) 34.47ms
+[I 171228 04:02:12 web:1971] 200 GET /api/profile (127.0.0.1) 13.51ms
+[W 171228 04:02:12 web:1971] 404 GET /static/media/4e3a1e87650b44e282ccacf67c4ebc79.jpg (127.0.0.1) 60.61ms
+[I 171228 04:02:12 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.03ms
+[I 171228 04:02:20 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 709.75ms
+[I 171228 04:02:21 web:1971] 200 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 1.19ms
+[I 171228 04:02:25 web:1971] 304 GET /my.html (127.0.0.1) 12.31ms
+[I 171228 04:02:25 web:1971] 200 GET /api/profile (127.0.0.1) 1.50ms
+[I 171228 04:02:25 web:1971] 304 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 1.01ms
+[I 171228 04:02:26 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.43ms
+[I 171228 04:02:31 web:1971] 304 GET /api/profile (127.0.0.1) 1.71ms
+[I 171228 04:02:31 web:1971] 304 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 1.32ms
+[I 171228 04:02:32 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.74ms
+[I 171228 04:02:34 web:1971] 304 GET /api/profile (127.0.0.1) 1.39ms
+[I 171228 04:02:34 web:1971] 304 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 1.16ms
+[I 171228 04:02:35 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.66ms
+[I 171228 04:03:16 web:1971] 200 GET /myhouse.html (127.0.0.1) 40.59ms
+[I 171228 04:03:17 web:1971] 200 GET /static/css/ihome/myhouse.css (127.0.0.1) 28.19ms
+[I 171228 04:03:17 web:1971] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 5.39ms
+[I 171228 04:03:17 web:1971] 200 GET /api/profile/auth (127.0.0.1) 1.90ms
+[I 171228 04:03:17 web:1971] 200 GET /api/house/my (127.0.0.1) 174.17ms
+[I 171228 04:03:18 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.84ms
+[I 171228 04:03:20 web:1971] 200 GET /newhouse.html (127.0.0.1) 40.87ms
+[I 171228 04:03:20 web:1971] 200 GET /static/css/ihome/newhouse.css (127.0.0.1) 15.41ms
+[I 171228 04:03:20 web:1971] 200 GET /static/js/ihome/newhouse.js (127.0.0.1) 3.43ms
+[I 171228 04:03:21 House:54] hit redis area_info
+[I 171228 04:03:21 web:1971] 200 GET /api/house/area (127.0.0.1) 1.05ms
+[I 171228 04:03:21 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.49ms
+[I 171228 04:04:58 web:1971] 200 POST /api/house/info (127.0.0.1) 813.07ms
+[I 171228 04:10:41 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/House.py modified; restarting server
+[I 171228 04:11:03 web:1971] 200 POST /api/house/image (127.0.0.1) 2182.15ms
+[I 171228 04:11:04 web:1971] 200 GET /static/media/e62dc3ce14d54e5bbd1c961e7b7da2ce.jpg (127.0.0.1) 247.90ms
+[I 171228 04:11:15 web:1971] 200 POST /api/house/image (127.0.0.1) 10.69ms
+[I 171228 04:11:15 web:1971] 200 GET /static/media/595b5340f88c4ea28dfdb00106cc73a3.jpg (127.0.0.1) 1.47ms
+[I 171228 04:11:21 web:1971] 304 GET /api/profile/auth (127.0.0.1) 95.74ms
+[I 171228 04:11:21 web:1971] 200 GET /api/house/my (127.0.0.1) 10.85ms
+[I 171228 04:11:21 web:1971] 304 GET /static/media/e62dc3ce14d54e5bbd1c961e7b7da2ce.jpg (127.0.0.1) 1.11ms
+[I 171228 04:11:22 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 140.72ms
+[I 171228 04:26:21 web:1971] 304 GET /my.html (127.0.0.1) 302.84ms
+[I 171228 04:26:22 web:1971] 304 GET /api/profile (127.0.0.1) 240.00ms
+[I 171228 04:26:23 web:1971] 304 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 73.67ms
+[I 171228 04:26:24 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 51.60ms
+[I 171228 04:26:29 web:1971] 304 GET /api/check_login (127.0.0.1) 1.03ms
+[I 171228 04:26:29 web:1971] 200 GET /api/house/index (127.0.0.1) 59.51ms
+[I 171228 04:26:29 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.82ms
+[I 171228 04:26:31 web:1971] 304 GET /api/profile (127.0.0.1) 2.55ms
+[I 171228 04:26:31 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 4.37ms
+[I 171228 04:26:36 web:1971] 304 GET /api/profile/auth (127.0.0.1) 1.59ms
+[I 171228 04:26:36 web:1971] 200 GET /api/house/my (127.0.0.1) 213.58ms
+[I 171228 04:26:36 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.82ms
+[I 171228 04:26:37 House:54] hit redis area_info
+[I 171228 04:26:37 web:1971] 304 GET /api/house/area (127.0.0.1) 1.06ms
+[I 171228 04:26:38 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.90ms
+[I 171228 04:28:39 web:1971] 200 POST /api/house/info (127.0.0.1) 985.66ms
+[I 171228 04:28:56 web:1971] 200 POST /api/house/image (127.0.0.1) 523.23ms
+[I 171228 04:28:57 web:1971] 200 GET /static/media/295c5a761e62433294a74eb440706ea7.jpg (127.0.0.1) 96.21ms
+[I 171228 04:29:08 web:1971] 200 POST /api/house/image (127.0.0.1) 117.71ms
+[I 171228 04:29:08 web:1971] 200 GET /static/media/c6bca2b594bb4710a96ec9cbee21f98f.jpg (127.0.0.1) 1.34ms
+[I 171228 04:29:15 web:1971] 200 POST /api/house/image (127.0.0.1) 30.20ms
+[I 171228 04:29:15 web:1971] 200 GET /static/media/b762fa5c38f64d7abb817ec3fc1d44f0.jpg (127.0.0.1) 1.34ms
+[I 171228 04:29:22 web:1971] 200 POST /api/house/image (127.0.0.1) 19.11ms
+[I 171228 04:29:22 web:1971] 200 GET /static/media/20e517bc13644e0d95263d0642e10f41.jpg (127.0.0.1) 1.03ms
+[I 171228 04:29:23 web:1971] 200 POST /api/house/image (127.0.0.1) 9.54ms
+[I 171228 04:29:23 web:1971] 200 GET /static/media/9db63e30b12945558bea1474823477fb.jpg (127.0.0.1) 1.21ms
+[I 171228 04:29:31 web:1971] 200 POST /api/house/image (127.0.0.1) 18.62ms
+[I 171228 04:29:31 web:1971] 200 GET /static/media/064e535500c24c66b97c94c3a608ccb5.jpg (127.0.0.1) 0.86ms
+[I 171228 04:29:38 web:1971] 304 GET /api/profile/auth (127.0.0.1) 849.16ms
+[I 171228 04:29:39 web:1971] 200 GET /api/house/my (127.0.0.1) 83.95ms
+[I 171228 04:29:39 web:1971] 304 GET /static/media/295c5a761e62433294a74eb440706ea7.jpg (127.0.0.1) 18.40ms
+[I 171228 04:29:40 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 103.61ms
+[I 171228 04:29:45 web:1971] 200 GET /detail.html?id=49&f=my (127.0.0.1) 46.96ms
+[I 171228 04:29:45 web:1971] 200 GET /static/css/ihome/detail.css (127.0.0.1) 25.16ms
+[I 171228 04:29:45 web:1971] 200 GET /static/js/ihome/detail.js (127.0.0.1) 11.81ms
+[E 171228 04:29:45 House:167] get() takes exactly 2 arguments (3 given)
+[E 171228 04:29:46 House:209] Multiple rows returned for Database.get() query
+[I 171228 04:29:47 web:1971] 200 GET /api/house/info?house_id=49 (127.0.0.1) 1418.30ms
+[I 171228 04:29:47 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 741.66ms
+[I 171228 04:29:48 web:1971] 304 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 133.21ms
+[I 171228 04:29:48 web:1971] 200 GET /static/images/houseicon_sprite.png (127.0.0.1) 56.60ms
+[I 171228 04:30:11 web:1971] 304 GET /api/profile (127.0.0.1) 1761.27ms
+[I 171228 04:30:11 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 504.24ms
+[I 171228 04:30:14 web:1971] 304 GET /api/check_login (127.0.0.1) 1.33ms
+[I 171228 04:30:14 web:1971] 200 GET /api/house/index (127.0.0.1) 177.30ms
+[I 171228 04:30:15 web:1971] 304 GET /static/media/295c5a761e62433294a74eb440706ea7.jpg (127.0.0.1) 58.20ms
+[I 171228 04:30:16 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.67ms
+[I 171228 04:30:25 web:1971] 200 GET /detail.html?id=49 (127.0.0.1) 40.66ms
+[E 171228 04:30:25 House:167] get() takes exactly 2 arguments (3 given)
+[E 171228 04:30:25 House:209] Multiple rows returned for Database.get() query
+[I 171228 04:30:25 web:1971] 304 GET /api/house/info?house_id=49 (127.0.0.1) 108.30ms
+[I 171228 04:30:26 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.11ms
+[I 171228 04:40:31 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 285.70ms
+[I 171228 04:48:31 web:1971] 304 GET /detail.html?id=49 (127.0.0.1) 271.15ms
+[I 171228 04:48:33 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 66.72ms
+[I 171228 04:48:33 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 14.30ms
+[I 171228 04:48:33 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 22.63ms
+[I 171228 04:48:33 web:1971] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 14.38ms
+[I 171228 04:48:33 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 151.48ms
+[I 171228 04:48:33 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 30.68ms
+[I 171228 04:48:33 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 132.61ms
+[I 171228 04:48:33 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 38.29ms
+[I 171228 04:48:33 web:1971] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 18.62ms
+[I 171228 04:48:33 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 138.66ms
+[I 171228 04:48:33 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 23.64ms
+[I 171228 04:48:33 web:1971] 304 GET /static/css/ihome/detail.css (127.0.0.1) 1.21ms
+[I 171228 04:48:33 web:1971] 304 GET /static/js/template.js (127.0.0.1) 16.15ms
+[I 171228 04:48:33 web:1971] 200 GET /static/js/ihome/detail.js (127.0.0.1) 0.95ms
+[E 171228 04:48:35 House:167] get() takes exactly 2 arguments (3 given)
+[E 171228 04:48:39 House:209] Multiple rows returned for Database.get() query
+[I 171228 04:48:39 web:1971] 304 GET /api/house/info?house_id=49 (127.0.0.1) 4796.02ms
+[I 171228 04:48:40 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 20.68ms
+[I 171228 04:48:54 web:1971] 304 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 49.57ms
+[I 171228 04:48:54 web:1971] 304 GET /static/images/houseicon_sprite.png (127.0.0.1) 23.33ms
+[I 171228 04:48:57 web:1971] 304 GET /detail.html?id=49 (127.0.0.1) 1.18ms
+[I 171228 04:48:57 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.62ms
+[I 171228 04:48:57 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.98ms
+[I 171228 04:48:57 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.04ms
+[I 171228 04:48:57 web:1971] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 0.76ms
+[I 171228 04:48:57 web:1971] 304 GET /static/css/ihome/detail.css (127.0.0.1) 5.35ms
+[I 171228 04:48:57 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.82ms
+[I 171228 04:48:57 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.92ms
+[I 171228 04:48:57 web:1971] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 1.06ms
+[I 171228 04:48:57 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.01ms
+[I 171228 04:48:57 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.11ms
+[I 171228 04:48:57 web:1971] 304 GET /static/js/ihome/detail.js (127.0.0.1) 5.75ms
+[I 171228 04:48:57 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.15ms
+[I 171228 04:48:57 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.99ms
+[I 171228 04:48:57 web:1971] 304 GET /static/js/template.js (127.0.0.1) 2.85ms
+[E 171228 04:48:57 House:167] get() takes exactly 2 arguments (3 given)
+[E 171228 04:48:57 House:209] Multiple rows returned for Database.get() query
+[I 171228 04:48:57 web:1971] 304 GET /api/house/info?house_id=49 (127.0.0.1) 4.20ms
+[I 171228 04:48:58 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.31ms
+[I 171228 04:48:59 web:1971] 304 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 1.28ms
+[I 171228 04:48:59 web:1971] 304 GET /static/images/houseicon_sprite.png (127.0.0.1) 0.83ms
+[I 171228 04:49:28 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.01ms
+[I 171228 04:50:28 web:1971] 304 GET /static/js/ihome/detail.js (127.0.0.1) 15.34ms
+[E 171228 04:50:30 House:167] get() takes exactly 2 arguments (3 given)
+[E 171228 04:50:30 House:209] Multiple rows returned for Database.get() query
+[I 171228 04:50:30 web:1971] 304 GET /api/house/info?house_id=49 (127.0.0.1) 658.85ms
+[I 171228 04:50:31 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.74ms
+[I 171228 04:51:39 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/House.py modified; restarting server
+[I 171228 04:52:01 web:1971] 304 GET /detail.html?id=49 (127.0.0.1) 162.29ms
+[I 171228 04:52:01 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 91.03ms
+[I 171228 04:52:01 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.85ms
+[I 171228 04:52:01 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 13.06ms
+[I 171228 04:52:01 web:1971] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 14.39ms
+[I 171228 04:52:01 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 28.68ms
+[I 171228 04:52:01 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 8.85ms
+[I 171228 04:52:01 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.29ms
+[I 171228 04:52:01 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.18ms
+[I 171228 04:52:01 web:1971] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 17.78ms
+[I 171228 04:52:01 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 16.19ms
+[I 171228 04:52:01 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 12.56ms
+[I 171228 04:52:01 web:1971] 304 GET /static/css/ihome/detail.css (127.0.0.1) 1.01ms
+[I 171228 04:52:01 web:1971] 304 GET /static/js/template.js (127.0.0.1) 17.42ms
+[I 171228 04:52:01 web:1971] 304 GET /static/js/ihome/detail.js (127.0.0.1) 49.98ms
+[E 171228 04:52:02 House:167] get() takes exactly 2 arguments (3 given)
+[I 171228 04:52:02 web:1971] 200 GET /api/house/info?house_id=49 (127.0.0.1) 409.01ms
+[I 171228 04:52:04 web:1971] 304 GET /static/media/295c5a761e62433294a74eb440706ea7.jpg (127.0.0.1) 37.65ms
+[I 171228 04:52:04 web:1971] 304 GET /static/media/20e517bc13644e0d95263d0642e10f41.jpg (127.0.0.1) 1.96ms
+[I 171228 04:52:04 web:1971] 304 GET /static/media/9db63e30b12945558bea1474823477fb.jpg (127.0.0.1) 1.53ms
+[I 171228 04:52:04 web:1971] 304 GET /static/media/064e535500c24c66b97c94c3a608ccb5.jpg (127.0.0.1) 21.15ms
+[I 171228 04:52:04 web:1971] 304 GET /static/media/c6bca2b594bb4710a96ec9cbee21f98f.jpg (127.0.0.1) 1.40ms
+[I 171228 04:52:04 web:1971] 304 GET /static/media/b762fa5c38f64d7abb817ec3fc1d44f0.jpg (127.0.0.1) 1.39ms
+[I 171228 04:52:04 web:1971] 304 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 1.55ms
+[I 171228 04:52:04 web:1971] 304 GET /static/images/houseicon_sprite.png (127.0.0.1) 20.85ms
+[I 171228 04:52:33 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 15.47ms
+[I 171228 04:52:45 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.64ms
+[I 171228 04:54:10 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 271.39ms
+[I 171228 04:54:10 web:1971] 304 GET /my.html (127.0.0.1) 77.82ms
+[I 171228 04:54:12 web:1971] 304 GET /api/profile (127.0.0.1) 1021.74ms
+[I 171228 04:54:12 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.52ms
+[I 171228 04:54:15 web:1971] 200 GET /api/logout (127.0.0.1) 1.83ms
+[I 171228 04:54:16 web:1971] 200 GET /api/check_login (127.0.0.1) 110.45ms
+[I 171228 04:54:16 web:1971] 304 GET /api/house/index (127.0.0.1) 1.06ms
+[I 171228 04:54:17 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.39ms
+[I 171228 04:54:19 web:1971] 304 GET /static/js/ihome/detail.js (127.0.0.1) 16.76ms
+[E 171228 04:54:19 House:167] get() takes exactly 2 arguments (3 given)
+[I 171228 04:54:19 web:1971] 200 GET /api/house/info?house_id=49 (127.0.0.1) 61.19ms
+[I 171228 04:54:20 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.68ms
+[I 171228 04:54:20 web:1971] 304 GET /static/media/064e535500c24c66b97c94c3a608ccb5.jpg (127.0.0.1) 12.40ms
+[I 171228 04:54:48 web:1971] 304 GET /detail.html?id=49 (127.0.0.1) 16.09ms
+[I 171228 04:54:48 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 21.27ms
+[I 171228 04:54:48 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 26.58ms
+[I 171228 04:54:48 web:1971] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 14.28ms
+[I 171228 04:54:48 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 27.98ms
+[I 171228 04:54:48 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 9.26ms
+[I 171228 04:54:48 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.88ms
+[I 171228 04:54:48 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 13.15ms
+[I 171228 04:54:48 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.50ms
+[I 171228 04:54:48 web:1971] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 20.47ms
+[I 171228 04:54:48 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 16.22ms
+[I 171228 04:54:48 web:1971] 304 GET /static/css/ihome/detail.css (127.0.0.1) 1.68ms
+[I 171228 04:54:48 web:1971] 304 GET /static/js/template.js (127.0.0.1) 17.05ms
+[I 171228 04:54:48 web:1971] 200 GET /static/js/ihome/detail.js (127.0.0.1) 10.80ms
+[I 171228 04:54:48 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 22.76ms
+[E 171228 04:54:48 House:167] get() takes exactly 2 arguments (3 given)
+[I 171228 04:54:48 web:1971] 304 GET /api/house/info?house_id=49 (127.0.0.1) 54.41ms
+[I 171228 04:54:48 web:1971] 304 GET /static/media/295c5a761e62433294a74eb440706ea7.jpg (127.0.0.1) 25.48ms
+[I 171228 04:54:48 web:1971] 304 GET /static/media/064e535500c24c66b97c94c3a608ccb5.jpg (127.0.0.1) 35.50ms
+[I 171228 04:54:49 web:1971] 304 GET /static/media/9db63e30b12945558bea1474823477fb.jpg (127.0.0.1) 22.25ms
+[I 171228 04:54:49 web:1971] 304 GET /static/media/c6bca2b594bb4710a96ec9cbee21f98f.jpg (127.0.0.1) 1.18ms
+[I 171228 04:54:49 web:1971] 304 GET /static/media/b762fa5c38f64d7abb817ec3fc1d44f0.jpg (127.0.0.1) 1.24ms
+[I 171228 04:54:49 web:1971] 304 GET /static/media/20e517bc13644e0d95263d0642e10f41.jpg (127.0.0.1) 1.02ms
+[I 171228 04:54:49 web:1971] 304 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 1.34ms
+[I 171228 04:54:49 web:1971] 304 GET /static/images/houseicon_sprite.png (127.0.0.1) 21.93ms
+[I 171228 04:54:49 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 23.86ms
+[I 171228 04:54:55 web:1971] 200 GET /booking.html?hid=49 (127.0.0.1) 21.79ms
+[I 171228 04:54:55 web:1971] 200 GET /static/css/ihome/booking.css (127.0.0.1) 14.44ms
+[I 171228 04:54:55 web:1971] 200 GET /static/js/ihome/booking.js (127.0.0.1) 17.87ms
+[I 171228 04:54:55 web:1971] 304 GET /api/check_login (127.0.0.1) 0.94ms
+[E 171228 04:54:55 House:167] get() takes exactly 2 arguments (3 given)
+[I 171228 04:54:55 web:1971] 304 GET /api/house/info?house_id=49 (127.0.0.1) 27.53ms
+[I 171228 04:54:57 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.87ms
+[I 171228 04:55:04 web:1971] 200 GET /register.html (127.0.0.1) 13.00ms
+[I 171228 04:55:04 web:1971] 200 GET /static/css/ihome/register.css (127.0.0.1) 24.33ms
+[I 171228 04:55:04 web:1971] 200 GET /static/js/ihome/register.js (127.0.0.1) 16.72ms
+[I 171228 04:55:05 web:1971] 200 GET /api/piccode?pre=&cur=f5185e56-cff4-4011-a981-82981e2ed57f (127.0.0.1) 914.70ms
+[I 171228 04:55:06 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.83ms
+[I 171228 04:55:09 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 4.32ms
+[I 171228 04:55:16 web:1971] 304 GET /api/check_login (127.0.0.1) 1.11ms
+[I 171228 04:55:16 web:1971] 304 GET /api/house/index (127.0.0.1) 1.56ms
+[I 171228 04:55:17 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.95ms
+[I 171228 04:55:25 web:1971] 200 GET /search.html?aid=1&aname=%E4%B8%9C%E5%9F%8E%E5%8C%BA&sd=&ed= (127.0.0.1) 24.53ms
+[I 171228 04:55:25 web:1971] 200 GET /static/css/ihome/search.css (127.0.0.1) 14.74ms
+[I 171228 04:55:25 web:1971] 200 GET /static/js/ihome/search.js (127.0.0.1) 18.61ms
+[I 171228 04:55:26 House:54] hit redis area_info
+[I 171228 04:55:26 web:1971] 304 GET /api/house/area (127.0.0.1) 1.55ms
+[D 171228 04:55:27 House:451] select distinct hi_title,hi_house_id,hi_price,hi_room_count,hi_address,hi_order_count,up_avatar,hi_index_image_url,hi_ctime from ih_house_info inner join ih_user_profile on hi_user_id=up_user_id left join ih_order_info on hi_house_id=oi_house_id where hi_area_id=%(area_id)s order by hi_ctime desc limit 6
+[I 171228 04:55:27 web:1971] 200 GET /api/house/list2?aid=1&sd=&ed=&sk=new&p=1 (127.0.0.1) 1132.88ms
+[I 171228 04:55:27 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.87ms
+[D 171228 04:55:41 House:451] select distinct hi_title,hi_house_id,hi_price,hi_room_count,hi_address,hi_order_count,up_avatar,hi_index_image_url,hi_ctime from ih_house_info inner join ih_user_profile on hi_user_id=up_user_id left join ih_order_info on hi_house_id=oi_house_id where hi_area_id=%(area_id)s order by hi_ctime desc limit 6
+[I 171228 04:55:41 web:1971] 200 GET /api/house/list2?aid=3&sd=&ed=&sk=new&p=1 (127.0.0.1) 3.52ms
+[I 171228 04:55:44 web:1971] 304 GET /api/check_login (127.0.0.1) 0.89ms
+[I 171228 04:55:44 web:1971] 304 GET /api/house/index (127.0.0.1) 0.94ms
+[I 171228 04:55:45 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.03ms
+[I 171228 05:04:59 web:1971] 304 GET /static/js/ihome/detail.js (127.0.0.1) 314.59ms
+[E 171228 05:05:01 House:167] get() takes exactly 2 arguments (3 given)
+[I 171228 05:05:05 web:1971] 304 GET /api/house/info?house_id=49 (127.0.0.1) 4266.16ms
+[I 171228 05:05:09 web:1971] 304 GET /static/media/295c5a761e62433294a74eb440706ea7.jpg (127.0.0.1) 396.42ms
+[I 171228 05:05:09 web:1971] 304 GET /static/media/c6bca2b594bb4710a96ec9cbee21f98f.jpg (127.0.0.1) 79.40ms
+[I 171228 05:05:09 web:1971] 304 GET /static/media/b762fa5c38f64d7abb817ec3fc1d44f0.jpg (127.0.0.1) 1.21ms
+[I 171228 05:05:09 web:1971] 304 GET /static/media/20e517bc13644e0d95263d0642e10f41.jpg (127.0.0.1) 1.30ms
+[I 171228 05:05:09 web:1971] 304 GET /static/media/9db63e30b12945558bea1474823477fb.jpg (127.0.0.1) 1.30ms
+[I 171228 05:05:09 web:1971] 304 GET /static/media/064e535500c24c66b97c94c3a608ccb5.jpg (127.0.0.1) 18.79ms
+[I 171228 05:05:09 web:1971] 304 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 15.28ms
+[I 171228 05:05:15 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 177.06ms
+[I 171228 05:05:53 web:1971] 304 GET /api/check_login (127.0.0.1) 309.10ms
+[E 171228 05:05:53 House:167] get() takes exactly 2 arguments (3 given)
+[I 171228 05:05:54 web:1971] 304 GET /api/house/info?house_id=49 (127.0.0.1) 1205.20ms
+[I 171228 05:05:54 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 146.69ms
+[I 171228 05:06:05 web:1971] 200 POST /api/login (127.0.0.1) 1.91ms
+[I 171228 05:06:06 web:1971] 200 GET /api/check_login (127.0.0.1) 26.38ms
+[I 171228 05:06:06 web:1971] 304 GET /api/house/index (127.0.0.1) 1.09ms
+[I 171228 05:06:07 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.40ms
+[I 171228 05:06:11 web:1971] 304 GET /static/js/ihome/detail.js (127.0.0.1) 15.73ms
+[E 171228 05:06:11 House:167] get() takes exactly 2 arguments (3 given)
+[I 171228 05:06:11 web:1971] 200 GET /api/house/info?house_id=49 (127.0.0.1) 5.73ms
+[I 171228 05:06:12 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.38ms
+[I 171228 05:06:14 web:1971] 304 GET /api/check_login (127.0.0.1) 0.85ms
+[E 171228 05:06:14 House:167] get() takes exactly 2 arguments (3 given)
+[I 171228 05:06:14 web:1971] 304 GET /api/house/info?house_id=49 (127.0.0.1) 62.69ms
+[I 171228 05:06:15 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.62ms
+[I 171228 05:06:25 web:1971] 200 POST /api/order (127.0.0.1) 316.60ms
+[I 171228 05:06:25 web:1971] 200 GET /orders.html (127.0.0.1) 36.31ms
+[I 171228 05:06:25 web:1971] 200 GET /static/css/ihome/orders.css (127.0.0.1) 27.67ms
+[I 171228 05:06:25 web:1971] 200 GET /static/js/ihome/orders.js (127.0.0.1) 18.97ms
+[I 171228 05:06:25 web:1971] 200 GET /api/order/my?role=custom (127.0.0.1) 34.45ms
+[I 171228 05:06:26 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.82ms
+[I 171228 05:11:24 autoreload:204] /root/PycharmProjects/tornado_test/home/handle/Orders.py modified; restarting server
+[I 171228 05:11:34 web:1971] 304 GET /orders.html (127.0.0.1) 40.09ms
+[I 171228 05:11:34 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 18.25ms
+[I 171228 05:11:34 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.19ms
+[I 171228 05:11:34 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 24.08ms
+[I 171228 05:11:34 web:1971] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 20.79ms
+[I 171228 05:11:34 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 8.73ms
+[I 171228 05:11:34 web:1971] 304 GET /static/css/ihome/orders.css (127.0.0.1) 1.07ms
+[I 171228 05:11:34 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.69ms
+[I 171228 05:11:34 web:1971] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 14.55ms
+[I 171228 05:11:34 web:1971] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 12.55ms
+[I 171228 05:11:34 web:1971] 304 GET /static/js/template.js (127.0.0.1) 18.50ms
+[I 171228 05:11:34 web:1971] 304 GET /static/js/ihome/orders.js (127.0.0.1) 0.70ms
+[I 171228 05:11:34 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.82ms
+[I 171228 05:11:34 web:1971] 200 GET /api/order/my?role=custom (127.0.0.1) 42.79ms
+[I 171228 05:11:34 web:1971] 304 GET /static/media/295c5a761e62433294a74eb440706ea7.jpg (127.0.0.1) 8.85ms
+[I 171228 05:11:42 web:1971] 304 GET /my.html (127.0.0.1) 38.44ms
+[I 171228 05:11:42 web:1971] 200 GET /api/profile (127.0.0.1) 1.53ms
+[I 171228 05:11:47 web:1971] 304 GET /profile.html (127.0.0.1) 21.43ms
+[I 171228 05:11:47 web:1971] 304 GET /static/js/ihome/profile.js (127.0.0.1) 26.26ms
+[I 171228 05:11:47 web:1971] 304 GET /api/profile (127.0.0.1) 1.75ms
+[I 171228 05:11:58 web:1971] 200 POST /api/profile/avatar (127.0.0.1) 164.34ms
+[I 171228 05:11:59 web:1971] 200 GET /static/media/ca7bc1d7db944c3da7b57b04955bd783.jpg (127.0.0.1) 1.57ms
+[I 171228 05:12:02 web:1971] 200 GET /api/profile (127.0.0.1) 2.02ms
+[I 171228 05:12:03 web:1971] 304 GET /static/media/ca7bc1d7db944c3da7b57b04955bd783.jpg (127.0.0.1) 0.81ms
+[I 171228 05:12:05 web:1971] 304 GET /api/order/my?role=custom (127.0.0.1) 2.09ms
+[I 171228 05:12:07 web:1971] 304 GET /api/profile (127.0.0.1) 1.58ms
+[I 171228 05:12:07 web:1971] 304 GET /static/media/ca7bc1d7db944c3da7b57b04955bd783.jpg (127.0.0.1) 1.70ms
+[I 171228 05:12:10 web:1971] 304 GET /api/logout (127.0.0.1) 1.26ms
+[I 171228 05:12:11 web:1971] 200 GET /api/check_login (127.0.0.1) 1.38ms
+[I 171228 05:12:11 web:1971] 304 GET /api/house/index (127.0.0.1) 0.93ms
+[I 171228 05:12:22 web:1971] 200 POST /api/login (127.0.0.1) 1.67ms
+[I 171228 05:12:35 web:1971] 200 POST /api/login (127.0.0.1) 1.54ms
+[I 171228 05:12:37 web:1971] 200 POST /api/login (127.0.0.1) 1.56ms
+[I 171228 05:12:39 web:1971] 304 GET /login.html (127.0.0.1) 24.35ms
+[I 171228 05:12:39 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.77ms
+[I 171228 05:12:39 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.82ms
+[I 171228 05:12:39 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 0.65ms
+[I 171228 05:12:39 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.64ms
+[I 171228 05:12:39 web:1971] 304 GET /static/css/ihome/login.css (127.0.0.1) 12.54ms
+[I 171228 05:12:39 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.07ms
+[I 171228 05:12:39 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.98ms
+[I 171228 05:12:39 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 15.66ms
+[I 171228 05:12:39 web:1971] 304 GET /static/js/ihome/login.js (127.0.0.1) 10.07ms
+[I 171228 05:12:46 web:1971] 200 POST /api/login (127.0.0.1) 1.49ms
+[I 171228 05:13:41 web:1971] 200 GET / (127.0.0.1) 37.34ms
+[I 171228 05:13:41 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.35ms
+[I 171228 05:13:41 web:1971] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.90ms
+[I 171228 05:13:41 web:1971] 200 GET /static/css/reset.css (127.0.0.1) 1.33ms
+[I 171228 05:13:41 web:1971] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 6.55ms
+[I 171228 05:13:41 web:1971] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.08ms
+[I 171228 05:13:41 web:1971] 200 GET /static/css/ihome/main.css (127.0.0.1) 0.75ms
+[I 171228 05:13:41 web:1971] 200 GET /static/css/ihome/index.css (127.0.0.1) 12.45ms
+[I 171228 05:13:41 web:1971] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 16.40ms
+[I 171228 05:13:41 web:1971] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.84ms
+[I 171228 05:13:41 web:1971] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.10ms
+[I 171228 05:13:41 web:1971] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 11.81ms
+[I 171228 05:13:41 web:1971] 200 GET /static/js/template.js (127.0.0.1) 0.82ms
+[I 171228 05:13:41 web:1971] 200 GET /static/js/ihome/index.js (127.0.0.1) 1.69ms
+[I 171228 05:13:41 web:1971] 200 GET /static/images/logo@128x59.png (127.0.0.1) 0.56ms
+[I 171228 05:13:41 web:1971] 200 GET /static/js/jquery.min.js (127.0.0.1) 0.76ms
+[I 171228 05:13:41 web:1971] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 18.07ms
+[I 171228 05:13:41 web:1971] 200 GET /api/check_login (127.0.0.1) 0.67ms
+[I 171228 05:13:41 web:1971] 200 GET /api/house/index (127.0.0.1) 0.86ms
+[I 171228 05:13:41 web:1971] 200 GET /static/media/295c5a761e62433294a74eb440706ea7.jpg (127.0.0.1) 0.78ms
+[I 171228 05:13:41 web:1971] 200 GET /favicon.ico (127.0.0.1) 15.64ms
+[I 171228 05:13:43 web:1971] 200 GET /login.html (127.0.0.1) 1.04ms
+[I 171228 05:13:43 web:1971] 200 GET /static/css/ihome/login.css (127.0.0.1) 0.96ms
+[I 171228 05:13:43 web:1971] 200 GET /static/js/ihome/login.js (127.0.0.1) 1.02ms
+[I 171228 05:14:00 web:1971] 200 POST /api/login (127.0.0.1) 1.47ms
+[I 171228 05:14:20 web:1971] 304 GET /login.html (127.0.0.1) 0.84ms
+[I 171228 05:14:20 web:1971] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.31ms
+[I 171228 05:14:20 web:1971] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.95ms
+[I 171228 05:14:20 web:1971] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.82ms
+[I 171228 05:14:20 web:1971] 304 GET /static/css/ihome/login.css (127.0.0.1) 0.73ms
+[I 171228 05:14:20 web:1971] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.03ms
+[I 171228 05:14:20 web:1971] 304 GET /static/css/reset.css (127.0.0.1) 1.82ms
+[I 171228 05:14:20 web:1971] 304 GET /static/js/ihome/login.js (127.0.0.1) 3.31ms
+[I 171228 05:14:20 web:1971] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.07ms
+[I 171228 05:14:20 web:1971] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.62ms
+[I 171228 05:14:25 web:1971] 200 POST /api/login (127.0.0.1) 1.08ms
+[I 171228 05:14:30 web:1971] 200 POST /api/login (127.0.0.1) 1.19ms
+[I 171228 05:14:32 web:1971] 200 POST /api/login (127.0.0.1) 1.25ms
+[I 171228 05:14:47 web:1971] 200 POST /api/login (127.0.0.1) 1.17ms
+[I 171228 05:14:49 web:1971] 200 POST /api/login (127.0.0.1) 1.21ms
+[I 171228 05:15:17 web:1971] 200 POST /api/login (127.0.0.1) 1.29ms
+[I 171228 05:15:19 web:1971] 200 POST /api/login (127.0.0.1) 2.25ms
+[I 171228 05:15:19 web:1971] 200 POST /api/login (127.0.0.1) 1.20ms
+[I 171228 05:15:19 web:1971] 200 POST /api/login (127.0.0.1) 1.04ms
+[I 171228 05:15:19 web:1971] 200 POST /api/login (127.0.0.1) 1.05ms
+[I 171228 05:16:01 web:1971] 200 POST /api/login (127.0.0.1) 1.31ms
+[I 171228 05:16:05 web:1971] 200 POST /api/login (127.0.0.1) 1.05ms
+[I 171228 05:17:08 web:1971] 200 POST /api/login (127.0.0.1) 1.86ms
+[I 171228 05:17:08 web:1971] 200 GET /api/check_login (127.0.0.1) 1.58ms
+[I 171228 05:17:08 web:1971] 304 GET /api/house/index (127.0.0.1) 1.68ms
+[I 171228 05:17:12 web:1971] 200 GET /my.html (127.0.0.1) 1.53ms
+[I 171228 05:17:13 web:1971] 200 GET /static/css/ihome/my.css (127.0.0.1) 44.51ms
+[I 171228 05:17:13 web:1971] 200 GET /static/js/ihome/my.js (127.0.0.1) 3.24ms
+[I 171228 05:17:13 web:1971] 200 GET /api/profile (127.0.0.1) 1.58ms
+[I 171228 05:17:17 web:1971] 200 GET /api/logout (127.0.0.1) 1.07ms
+[I 171228 05:17:17 web:1971] 200 GET /api/check_login (127.0.0.1) 0.96ms
+[I 171228 05:17:17 web:1971] 304 GET /api/house/index (127.0.0.1) 1.03ms
+[I 171228 05:17:25 web:1971] 200 POST /api/login (127.0.0.1) 1.54ms
+[I 171228 05:17:25 web:1971] 200 GET /api/check_login (127.0.0.1) 1.11ms
+[I 171228 05:17:25 web:1971] 304 GET /api/house/index (127.0.0.1) 1.01ms
+[I 171228 05:17:29 web:1971] 304 GET /api/profile (127.0.0.1) 1.78ms
+[I 171228 05:17:31 web:1971] 304 GET /api/logout (127.0.0.1) 1.10ms
+[I 171228 05:17:32 web:1971] 200 GET /api/check_login (127.0.0.1) 0.81ms
+[I 171228 05:17:32 web:1971] 304 GET /api/house/index (127.0.0.1) 0.83ms
+[I 171228 05:17:42 web:1971] 200 POST /api/login (127.0.0.1) 1.62ms
+[I 171228 05:17:43 web:1971] 200 GET /api/check_login (127.0.0.1) 1.22ms
+[I 171228 05:17:43 web:1971] 304 GET /api/house/index (127.0.0.1) 0.86ms
+[I 171228 05:17:46 web:1971] 200 GET /api/profile (127.0.0.1) 1.45ms
+[I 171228 05:17:46 web:1971] 200 GET /static/media/ca7bc1d7db944c3da7b57b04955bd783.jpg (127.0.0.1) 1.57ms
+[I 171228 05:17:49 web:1971] 304 GET /api/logout (127.0.0.1) 1.46ms
+[I 171228 05:17:49 web:1971] 200 GET /api/check_login (127.0.0.1) 1.32ms
+[I 171228 05:17:49 web:1971] 304 GET /api/house/index (127.0.0.1) 1.82ms
+[I 171228 05:17:59 web:1971] 200 POST /api/login (127.0.0.1) 1.39ms
+[I 171228 05:17:59 web:1971] 200 GET /api/check_login (127.0.0.1) 0.93ms
+[I 171228 05:17:59 web:1971] 304 GET /api/house/index (127.0.0.1) 0.88ms
+[I 171228 05:18:01 web:1971] 200 GET /api/profile (127.0.0.1) 1.70ms
+[I 171228 05:18:01 web:1971] 200 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 33.30ms
+[I 171228 05:18:04 web:1971] 200 GET /lorders.html (127.0.0.1) 42.34ms
+[I 171228 05:18:04 web:1971] 200 GET /static/css/ihome/orders.css (127.0.0.1) 13.91ms
+[I 171228 05:18:04 web:1971] 200 GET /static/js/ihome/lorders.js (127.0.0.1) 5.99ms
+[I 171228 05:18:04 web:1971] 200 GET /api/order/my?role=landlord (127.0.0.1) 3.50ms
+[I 171228 05:18:13 web:1971] 200 POST /api/order/accept (127.0.0.1) 79.30ms
+[I 171228 05:18:20 web:1971] 304 GET /api/profile (127.0.0.1) 2.31ms
+[I 171228 05:18:23 web:1971] 200 GET /myhouse.html (127.0.0.1) 38.52ms
+[I 171228 05:18:23 web:1971] 200 GET /static/css/ihome/myhouse.css (127.0.0.1) 19.77ms
+[I 171228 05:18:23 web:1971] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 6.20ms
+[I 171228 05:18:23 web:1971] 200 GET /api/profile/auth (127.0.0.1) 1.27ms
+[I 171228 05:18:23 web:1971] 200 GET /api/house/my (127.0.0.1) 2.09ms
+[I 171228 05:18:23 web:1971] 304 GET /static/media/295c5a761e62433294a74eb440706ea7.jpg (127.0.0.1) 0.72ms
+[I 171228 05:18:25 web:1971] 304 GET /api/profile (127.0.0.1) 1.49ms
+[I 171228 05:18:31 web:1971] 200 GET /api/order/my?role=landlord (127.0.0.1) 1.82ms
+[I 171228 05:18:34 web:1971] 304 GET /api/profile (127.0.0.1) 1.89ms
+[I 171228 05:18:38 web:1971] 200 GET /orders.html (127.0.0.1) 41.29ms
+[I 171228 05:18:38 web:1971] 200 GET /static/js/ihome/orders.js (127.0.0.1) 10.42ms
+[I 171228 05:18:38 web:1971] 200 GET /api/order/my?role=custom (127.0.0.1) 1.69ms
+[I 171228 05:18:39 web:1971] 304 GET /api/profile (127.0.0.1) 1.44ms
+[I 171228 05:18:41 web:1971] 304 GET /api/logout (127.0.0.1) 1.78ms
+[I 171228 05:18:42 web:1971] 200 GET /api/check_login (127.0.0.1) 1.23ms
+[I 171228 05:18:42 web:1971] 304 GET /api/house/index (127.0.0.1) 1.23ms
+[I 171228 05:18:50 web:1971] 200 POST /api/login (127.0.0.1) 1.25ms
+[I 171228 05:18:50 web:1971] 200 GET /api/check_login (127.0.0.1) 0.97ms
+[I 171228 05:18:50 web:1971] 304 GET /api/house/index (127.0.0.1) 0.81ms
+[I 171228 05:18:53 web:1971] 200 GET /api/profile (127.0.0.1) 1.51ms
+[I 171228 05:18:53 web:1971] 304 GET /static/media/ca7bc1d7db944c3da7b57b04955bd783.jpg (127.0.0.1) 0.82ms
+[I 171228 05:18:56 web:1971] 200 GET /api/order/my?role=custom (127.0.0.1) 2.99ms
+[I 171228 05:19:11 web:1971] 304 GET /api/profile (127.0.0.1) 1.45ms
+[I 171228 05:19:13 web:1971] 304 GET /api/logout (127.0.0.1) 1.28ms
+[I 171228 05:19:13 web:1971] 200 GET /api/check_login (127.0.0.1) 1.15ms
+[I 171228 05:19:13 web:1971] 304 GET /api/house/index (127.0.0.1) 1.13ms
+[I 180106 17:20:15 web:1971] 200 GET / (127.0.0.1) 42.04ms
+[I 180106 17:20:15 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 13.29ms
+[I 180106 17:20:15 web:1971] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.07ms
+[I 180106 17:20:15 web:1971] 200 GET /static/css/reset.css (127.0.0.1) 5.90ms
+[I 180106 17:20:15 web:1971] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 3.78ms
+[I 180106 17:20:15 web:1971] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 9.82ms
+[I 180106 17:20:15 web:1971] 200 GET /static/css/ihome/main.css (127.0.0.1) 5.77ms
+[I 180106 17:20:15 web:1971] 200 GET /static/js/jquery.min.js (127.0.0.1) 2.62ms
+[I 180106 17:20:15 web:1971] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.89ms
+[I 180106 17:20:15 web:1971] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 4.17ms
+[I 180106 17:20:15 web:1971] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.59ms
+[I 180106 17:20:15 web:1971] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 6.69ms
+[I 180106 17:20:15 web:1971] 200 GET /static/css/ihome/index.css (127.0.0.1) 1.50ms
+[I 180106 17:20:15 web:1971] 200 GET /static/js/template.js (127.0.0.1) 52.17ms
+[I 180106 17:20:15 web:1971] 200 GET /static/js/ihome/index.js (127.0.0.1) 14.01ms
+[I 180106 17:20:15 web:1971] 200 GET /static/images/logo@128x59.png (127.0.0.1) 3.15ms
+[I 180106 17:20:15 web:1971] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 18.29ms
+[I 180106 17:20:15 web:1971] 200 GET /api/check_login (127.0.0.1) 1.80ms
+[I 180106 17:20:15 web:1971] 200 GET /api/house/index (127.0.0.1) 102.25ms
+[I 180106 17:20:15 web:1971] 200 GET /static/media/295c5a761e62433294a74eb440706ea7.jpg (127.0.0.1) 62.92ms
+[I 180106 17:20:15 web:1971] 200 GET /favicon.ico (127.0.0.1) 21.44ms
+[I 180106 17:20:23 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 48.06ms
+[I 180106 17:20:31 web:1971] 200 GET /login.html (127.0.0.1) 38.48ms
+[I 180106 17:20:32 web:1971] 200 GET /static/css/ihome/login.css (127.0.0.1) 8.40ms
+[I 180106 17:20:32 web:1971] 200 GET /static/js/ihome/login.js (127.0.0.1) 16.12ms
+[I 180106 17:20:33 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 5.96ms
+[I 180106 17:20:45 web:1971] 200 POST /api/login (127.0.0.1) 33.40ms
+[I 180106 17:20:53 web:1971] 200 POST /api/login (127.0.0.1) 2.30ms
+[I 180106 17:20:54 web:1971] 200 GET /api/check_login (127.0.0.1) 1.09ms
+[I 180106 17:20:54 web:1971] 304 GET /api/house/index (127.0.0.1) 0.96ms
+[I 180106 17:20:54 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 6.94ms
+[I 180106 17:50:30 web:1971] 200 GET /my.html (127.0.0.1) 70.35ms
+[I 180106 17:50:30 web:1971] 200 GET /static/css/ihome/my.css (127.0.0.1) 12.37ms
+[I 180106 17:50:30 web:1971] 200 GET /static/js/ihome/my.js (127.0.0.1) 20.31ms
+[I 180106 17:50:30 web:1971] 200 GET /api/profile (127.0.0.1) 7.82ms
+[I 180106 17:50:30 web:1971] 200 GET /static/media/892567da38834a4f8e50d9f202fa9b24.jpg (127.0.0.1) 55.54ms
+[I 180106 17:50:31 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 5.73ms
+[I 180106 17:50:41 web:1971] 200 GET /orders.html (127.0.0.1) 42.20ms
+[I 180106 17:50:41 web:1971] 200 GET /static/css/ihome/orders.css (127.0.0.1) 12.08ms
+[I 180106 17:50:41 web:1971] 200 GET /static/js/ihome/orders.js (127.0.0.1) 1.87ms
+[I 180106 17:50:41 web:1971] 200 GET /api/order/my?role=custom (127.0.0.1) 45.47ms
+[I 180106 17:50:42 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 4.74ms
+[I 180106 17:50:44 web:1971] 304 GET /api/profile (127.0.0.1) 1.63ms
+[I 180106 17:50:45 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.24ms
+[I 180106 17:50:45 web:1971] 200 GET /auth.html (127.0.0.1) 1.85ms
+[I 180106 17:50:45 web:1971] 200 GET /static/css/ihome/profile.css (127.0.0.1) 1.88ms
+[I 180106 17:50:45 web:1971] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 2.12ms
+[I 180106 17:50:45 web:1971] 200 GET /static/js/ihome/auth.js (127.0.0.1) 41.81ms
+[I 180106 17:50:46 web:1971] 200 GET /api/profile/auth (127.0.0.1) 1.66ms
+[I 180106 17:50:47 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.43ms
+[I 180106 17:50:48 web:1971] 304 GET /api/profile (127.0.0.1) 2.99ms
+[I 180106 17:50:49 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 4.54ms
+[I 180106 17:50:50 web:1971] 200 GET /lorders.html (127.0.0.1) 69.84ms
+[I 180106 17:50:50 web:1971] 200 GET /static/js/ihome/lorders.js (127.0.0.1) 14.07ms
+[I 180106 17:50:50 web:1971] 200 GET /api/order/my?role=landlord (127.0.0.1) 3.29ms
+[I 180106 17:50:51 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.63ms
+[I 180106 17:50:53 web:1971] 304 GET /api/profile (127.0.0.1) 1.39ms
+[I 180106 17:50:54 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 4.09ms
+[I 180106 17:52:12 web:1971] 304 GET /api/order/my?role=landlord (127.0.0.1) 2.12ms
+[I 180106 17:52:13 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 2.55ms
+[I 180106 17:54:32 web:1971] 304 GET /api/profile (127.0.0.1) 2.24ms
+[I 180106 17:54:33 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 3.39ms
+[I 180106 17:54:36 web:1971] 304 GET /api/check_login (127.0.0.1) 1.93ms
+[I 180106 17:54:36 web:1971] 304 GET /api/house/index (127.0.0.1) 0.96ms
+[I 180106 17:54:37 web:1971] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 4.39ms
