@@ -8,7 +8,7 @@ urls = [
     (r"^/api/smscode$", VerifyCode.SmsCode),  # 发送手机验证码
     (r"^/api/register$", UserHandle.Register),  # 注册
     (r"^/api/login$", UserHandle.Login),  # 登入
-    (r"^/api/logout$", UserHandle.Logout),
+    (r"^/api/logout$", UserHandle.Logout), #登出
     (r"^/api/profile/avatar$", Profile.Avator), #头像上传处理
     (r"^/api/profile$", Profile.Profile),  # 个人主页个人信息
     (r"^/api/profile/name$", Profile.ChangeName),  # 修改昵称
@@ -23,6 +23,6 @@ urls = [
     (r'^/api/order/my$', Orders.MyOrder), # 我的订单，作为房客和房东同时适用
     (r'^/api/order/accept$', Orders.AcceptOrder), # 接单
     (r'^/api/order/reject$', Orders.RejectOrder), # 拒单
-    (r'^/api/order/comment$', Orders.OrderComment),
-    (r"^/(.*)$", StaticFileHandler, dict(path=os.path.join(os.path.dirname(__file__), "html"), default_filename="index.html"))
+    (r'^/api/order/comment$', Orders.OrderComment), #评论
+    (r"^/(.*)$", StaticFileHandler, dict(path=os.path.join(os.path.dirname(__file__), "html"), default_filename="index.html")) 
 ]
