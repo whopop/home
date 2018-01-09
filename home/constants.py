@@ -16,4 +16,4 @@ HOUSE_LIST_PAGE_CACHE_NUM = 2 # 房源列表页每次缓存页面书
 
 REDIS_HOUSE_LIST_EXPIRES_SECONDS = 7200 # 列表页数据缓存时间 秒
 
-AVATAR_URL = "/static/media/" # 头像f房源图片保存目录
+AVATAR_URL = "/static/media/" # 头像房源图片保存目录
