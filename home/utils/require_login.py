@@ -5,6 +5,7 @@ from utils.response_code import RET
 
 
 def require_login(fun):
+    """ 检验是否登入的装饰器"""
     @functools.wraps(fun)
     def wrapper(self, *args, **kwargs):
         if not self.get_current_user():
